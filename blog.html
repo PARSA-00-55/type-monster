@@ -16,31 +16,33 @@
     <header>
         <div class="navbar bg-base-100 container mx-auto">
             <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl"><span class="font-extrabold text-5xl text-sky-500">Blog</span>.com</a>
+                <a class="btn btn-ghost normal-case text-xl"><span
+                        class="font-extrabold text-5xl text-sky-500">Blog</span>.com</a>
             </div>
             <div class="flex-none gap-2">
-              <div class="form-control">
-                <input type="text" placeholder="Search" class="input input-bordered" />
-              </div>
-              <div class="dropdown dropdown-end">
-                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                  <div class="w-10 rounded-full">
-                    <img src="https://placeimg.com/80/80/people" />
-                  </div>
-                </label>
-                <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                  <li>
-                    <a class="justify-between">
-                      Profile
-                      <span class="badge">New</span>
-                    </a>
-                  </li>
-                  <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
-                </ul>
-              </div>
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered" />
+                </div>
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="https://placeimg.com/80/80/people" />
+                        </div>
+                    </label>
+                    <ul tabindex="0"
+                        class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </div>
     </header>
 
     <!-- Q&A section -->
@@ -48,42 +50,75 @@
         <!-- card 1 -->
         <div class="card w-full bg-base-300 shadow-xl">
             <div class="card-body">
-              <h2 class="card-title text-4xl font-semibold text-sky-500" >Difference between local storage and session storage?</h2>
-              <br>
-              <!-- local storage -->
-              <h3 class="text-3xl">Local Storage</h3>
-              <li>The storage capacity of local storage is 5MB/10MB</li>
-              <li>As it is not session-based, it must be deleted via javascript or manually</li>
-              <li>The client can only read local storage</li>
-              <li>There is no transfer of data to the server</li>
-              <li>There are fewer old browsers that support it</li>
-              <!-- seassion storage -->
-              <h3 class="text-3xl mt-3">Session Storage</h3>
-              <li>The storage capacity of session storage is 5MB.</li>
-              <li>It's seassion-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser is closed.</li>
-              <li>The client can only read local storage.</li>
-              <li>There are fewer old browsers that support it.</li>
+                <h2 class="card-title text-4xl font-semibold text-sky-500">Difference between local storage and session
+                    storage?</h2>
+                <br>
+                <!-- local storage -->
+                <h3 class="text-3xl">Local Storage</h3>
+                <li>The storage capacity of local storage is 5MB/10MB</li>
+                <li>As it is not session-based, it must be deleted via javascript or manually</li>
+                <li>The client can only read local storage</li>
+                <li>There is no transfer of data to the server</li>
+                <li>There are fewer old browsers that support it</li>
+                <!-- seassion storage -->
+                <h3 class="text-3xl mt-3">Session Storage</h3>
+                <li>The storage capacity of session storage is 5MB.</li>
+                <li>It's seassion-based and works per window or tab. This means that data is stored only for the
+                    duration of a session, i.e., until the browser is closed.</li>
+                <li>The client can only read local storage.</li>
+                <li>There are fewer old browsers that support it.</li>
             </div>
-          </div>
+        </div>
 
         <!-- card 2 -->
         <div class="card w-full bg-base-300 shadow-xl mt-7">
             <div class="card-body">
-                <h2 class="card-title text-4xl font-semibold text-sky-500" >Difference between global scope and block scope?</h2>
+                <h2 class="card-title text-4xl font-semibold text-sky-500">Difference between global scope and block
+                    scope?</h2>
                 <br>
                 <h3 class="text-3xl">Global scope</h3>
                 <p class="w-4/5">
-                    The factors characterized beyond any capability or wavy sections are known as worldwide factors and have a worldwide degree. Worldwide extension implies that the factors can be gotten to from any piece of that program, any capability or restrictive state can get to that factor.
+                    The factors characterized beyond any capability or wavy sections are known as worldwide factors and
+                    have a worldwide degree. Worldwide extension implies that the factors can be gotten to from any
+                    piece of that program, any capability or restrictive state can get to that factor.
                 </p>
 
                 <h3 class="text-3xl mt-4">Block scope</h3>
                 <p class="w-4/5">
-                    Block degree is likewise a sub-kind of nearby extension. The block degree can be characterized as the extent of the factors inside the wavy sections {}. Presently, these wavy sections can be of circles, contingent articulations, or something different. You are simply permitted to allude to these factors from inside the wavy sections {}.
+                    Block degree is likewise a sub-kind of nearby extension. The block degree can be characterized as
+                    the extent of the factors inside the wavy sections {}. Presently, these wavy sections can be of
+                    circles, contingent articulations, or something different. You are simply permitted to allude to
+                    these factors from inside the wavy sections {}.
                 </p>
             </div>
-          </div>
+        </div>
 
         <!-- card 3 -->
+        <div class="card w-full bg-base-300 shadow-xl mt-7">
+            <div class="card-body">
+                <h2 class="card-title text-4xl font-semibold text-sky-500 mb-4">How event loop work in JS?</h2>
+                <p class="w-4/5">An event loop works by pulling stuff out of a queue and then placing it onto a function
+                    execution stack whenever the function stack becomes empty. It works in a cyclic manner, where it
+                    continually checks whether or not the call stack is empty. It is single-threaded not multithreaded.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="card w-full bg-base-300 shadow-xl mt-7">
+            <div class="card-body">
+              <h2 class="card-title text-4xl font-semibold text-sky-500 mb-4">What are the many ways we can get undefined?</h2>
+              <li class="text-xl">Variable that is not intialized will give Undefined.</li>
+              <li class="text-xl">Function with no return</li>
+              <li class="text-xl">Parameter that is not passed will be undefined.</li>
+              <li class="text-xl">If return has nothing on the right side will give you undefined.</li>
+              <li class="text-xl">Property that doesn't exists on an object will give you undefined.</li>
+              <li class="text-xl">Accessing array elements outside of the index range.</li>
+              <li class="text-xl">Deleting an element inside an array.</li>
+              <li class="text-xl">Set a value directly to undefined.</li>
+            </div>
+          </div>
     </main>
 
 </body>
