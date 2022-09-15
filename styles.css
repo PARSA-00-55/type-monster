@@ -190,3 +190,16 @@ button {
     flex-direction: column;
   }
 }
+
+@media only screen and (min-width: 600px){
+  #histories{
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    text-align: center;
+    grid-gap: 2rem;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+}
